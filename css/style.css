@@ -664,13 +664,13 @@ p {
 /*----burger-----------*/
 .burger {
   float: right;
-  width: 48px;
-  height: 48px;
+  width: 38px;
+  height: 38px;
   background-color: #fff;
   display: none;
   position: relative;
   cursor: pointer;
-  top: -10px;
+  top: -5px;
 }
 
 @media (max-width: 767px) {
@@ -690,7 +690,7 @@ p {
   width: 70%;
   height: 2px;
   background-color: #a1a1a1;
-  left: 7.2px;
+  left: 5.7px;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   -o-transition: transform 0.3s ease-in-out;
@@ -706,18 +706,18 @@ p {
   transition: transform 0.001s ease-in-out, -webkit-transform 0.001s ease-in-out;
 }
 .serif--1 {
-  top: 10.5px;
+  top: 8px;
 }
 .serif--2 {
-  top: 23px;
+  top: 18px;
 }
 .serif--3 {
-  top: 35.5px;
+  top: 28px;
 }
 .burger.active .serif--1 {
-  -webkit-transform: translate(0, 12.5px) rotate(45deg);
-      -ms-transform: translate(0, 12.5px) rotate(45deg);
-          transform: translate(0, 12.5px) rotate(45deg);
+  -webkit-transform: translate(0, 10px) rotate(45deg);
+      -ms-transform: translate(0, 10px) rotate(45deg);
+          transform: translate(0, 10px) rotate(45deg);
 }
 .burger.active .serif--2 {
 	
@@ -726,9 +726,9 @@ p {
           transform: translate(999px, 0);
 }
 .burger.active .serif--3 {
-  -webkit-transform: translate(0, -12.5px) rotate(-45deg);
-      -ms-transform: translate(0, -12.5px) rotate(-45deg);
-          transform: translate(0, -12.5px) rotate(-45deg);
+  -webkit-transform: translate(0, -10px) rotate(-45deg);
+      -ms-transform: translate(0, -10px) rotate(-45deg);
+          transform: translate(0, -10px) rotate(-45deg);
 }
 /* header end */
 
@@ -792,7 +792,105 @@ p {
 }
 }
 
-.inner .rhomb-icon.white-icon {
+.main-screen__btn {
+    position: absolute;
+    bottom: 41px;
+    left: calc(50% - 14px);
+    width: 28px;
+    height: 28px;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: rotate(45deg);
+    transform-origin: center center;
+}
+
+.main-screen__btn_outer {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.main-screen__btn_inner {
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: calc(50% - 2px);
+    border-bottom: 1px solid #222222;
+    border-right: 1px solid #222222;
+}
+
+.main-screen__btn:hover .main-screen__btn_outer {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.main-screen__btn:hover .main-screen__btn_inner {
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.main-screen__btn:hover .main-screen__btn_inner {
+    animation: move 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes move {
+                0% {
+                    top: calc(50% - 2px);
+                    left: calc(50% - 2px);
+                }
+                50% {
+                    top: 25%;
+                    left: 25%;
+                }
+                100% {
+                    top: calc(50% - 2px);
+                    left: calc(50% - 2px);
+                }
+            }
+    @-moz-keyframes move {
+                0% {
+                    top: calc(50% - 2px);
+                    left: calc(50% - 2px);
+                }
+                50% {
+                    top: 25%;
+                    left: 25%;
+                }
+                100% {
+                    top: calc(50% - 2px);
+                    left: calc(50% - 2px);
+                }
+            }
+        @-o-keyframes move {
+                0% {
+                    top: calc(50% - 2px);
+                    left: calc(50% - 2px);
+                }
+                50% {
+                    top: 25%;
+                    left: 25%;
+                }
+                100% {
+                    top: calc(50% - 2px);
+                    left: calc(50% - 2px);
+                }
+            }
+            @keyframes move {
+                0% {
+                    top: calc(50% - 2px);
+                    left: calc(50% - 2px);
+                }
+                50% {
+                    top: 25%;
+                    left: 25%;
+                }
+                100% {
+                    top: calc(50% - 2px);
+                    left: calc(50% - 2px);
+                }
+            }
+/*.inner .rhomb-icon.white-icon {
     position: absolute;
     left: 50%;
     bottom: 35px;
@@ -806,7 +904,7 @@ p {
 .inner .rhomb-icon.white-icon .fa-angle-down {
     margin-left: 3px;
     vertical-align: bottom;
-}
+}*/
 
 
 /* inner end */
@@ -1619,6 +1717,7 @@ p {
 	}
 
 	#subscribe-form button {
+        width: 100%;
 		margin-left: 0;
 	}
 }
@@ -1818,10 +1917,15 @@ p {
 	   padding-top: 0;
 	   margin-bottom: 10px;
 	}
+
+    .contacts .form .right .btn {
+    width: 100%;
+}
 }
 
 .contacts .form .right .btn {
-    float: right
+
+    float: right;
 }
 /* contacts end */
 
