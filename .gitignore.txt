@@ -1,2 +1,1 @@
-#css files
-src/*.css
+css/**
