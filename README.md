@@ -1,10 +1,10 @@
-#What is it?
+What is it?
 ===========
 
 This is my first project with Easy Code.
 The project is a fully responsive landing-page.
 
-#What tools was the project developed with?
+What tools was the project developed with?
 ===========================================
 
 The project was developed with using:
@@ -16,7 +16,7 @@ The project was developed with using:
 The grid is similar to the bootstrap grid. Adaptability was ensured without
 direct Bootstrap framework use.
 
-#What does landing consist of?
+What does landing consist of?
 ============================= 
 
 Landing consists of 9 main blocks (sections):
@@ -37,12 +37,17 @@ Customer reviews section looks like slider, developed with Owl Carousel jQuery p
 Due to contact forms users can subscribe on the latest news and send messages.
 Footer contains the most popular social icons-links.
 
-#Detected bugs
+Detected bugs
 ==============
 
 I will be grateful to everyone who will leave their notes here
 
-#Contacts
+LICENSE
+=======
+
+See LICENSE.md file
+
+Contacts
 =========
 
 Email: oleg.gruzdev.1982@gmail.com
